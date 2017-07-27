@@ -8,16 +8,16 @@
   </PropertyGroup>
   <PropertyGroup>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <id>Razorvine.Serpent</id>
-    <version>1.18.0.0</version>
+    <PackageId>Razorvine.Serpent.NetCore</PackageId>
+    <Version>1.18.0.0</Version>
     <!-- from assembly info -->
-    <title>Razorvine.Serpent</title>
-    <authors>Irmen de Jong</authors>
-    <owners>Irmen de Jong</owners>
-    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
-    <projectUrl>https://github.com/irmen/Serpent</projectUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>
+    <Title>Razorvine.Serpent.NetCore</Title>
+    <Authors>Irmen de Jong</Authors>
+    <Owners>Irmen de Jong</Owners>
+    <LicenseUrl>http://opensource.org/licenses/MIT</LicenseUrl>
+    <ProjectUrl>https://github.com/irmen/Serpent</ProjectUrl>
+    <RequireLicenseAcceptance>false</RequireLicenseAcceptance>
+    <Description>
       Serpent Python literal expression serialization.
 
       Serpent provides Python ast.literal_eval() compatible object tree serialization.
@@ -26,15 +26,15 @@
       such a Python expression itself, back into the equivalent .NET datatypes.
 
       More info for the Python version is on Pypi: https://pypi.python.org/pypi/serpent
-    </description>
-    <summary>Serpent Python literal expression serialization</summary>
-    <releaseNotes>
+    </Description>
+    <Summary>Serpent Python literal expression serialization</Summary>
+    <PackageReleaseNotes>
       CRITICAL FIX: rewrote serialization and parsing of strings containing chars above 255, this didn't work. Now mimics python's repr(str) form as closely as possible.
       Added Serializer.MaximumLevel to avoid too deep recursion resulting in stack overflow errors.
       Serializer.MaximumLevel decreased to 500.
-    </releaseNotes>
-    <copyright>Copyright 2017</copyright>
-    <tags>serialization python pyro</tags>
+    </PackageReleaseNotes>
+    <Copyright>Copyright 2017</Copyright>
+    <Tags>serialization python pyro</Tags>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
